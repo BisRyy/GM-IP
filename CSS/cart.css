@@ -1,7 +1,7 @@
 
 /* Content Section === Cart Page */
 main .cart-page{
-    max-height: 580px;
+    /*max-height: 80px;*/
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -26,7 +26,7 @@ main .cart-page .cart-items table .qty{
 main .cart-page .cart-items tbody img{
     width: 100px;
     height: 80px;
-    margin-right: 3px;
+    margin-right: 10px;
 }
 main .cart-page .cart-items table th{
     border-bottom: 1px solid rgba(236, 240, 241,0.3);
@@ -66,11 +66,7 @@ main .cart-page .cart-items .pagination ul li a:hover{
     color: var(--darkStaleGray);
     background-color: var(--khaki);
 }
-input.cartNumber::-webkit-outer-spin-button,
-input.cartNumber::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+
 input.cartNumber{
     width: 50px;
     height: 25px;
@@ -79,41 +75,9 @@ input.cartNumber{
     top: 20%;
     left: 23px;
 }
-div.prev{
-    width: 30px;
-    height: 25px;
-    position: absolute;
-    left: -10px;
-    top: 20%;
-    background-color: var(--darkStaleGray);
-    color: var(--khaki);
-    border-radius: 2px;
-    padding-top: 4px;
-    z-index: 1000;
-    cursor: pointer;
-}
-div.next{
-    width: 30px;
-    height: 25px;
-    position: absolute;
-    right: -10px;
-    top: 20%;
-    background-color: var(--darkStaleGray);
-    color: var(--khaki);
-    border-radius: 2px;
-    padding-top: 4px;
-    z-index: 1000;
-    cursor: pointer;
-}
-div.prev:hover,
-div.next:hover{
-    background-color: var(--khaki);
-    color: var(--darkStaleGray);
-}
 /* Content Section === Cart Page === Cart Summary */
 main .cart-summary{
-    width: 25%;
-    height: 220px;
+    width: 30%;
     padding: 5px;
     border: 1px solid rgba(236, 240, 241,0.3);
     margin-top: 28px;
@@ -144,4 +108,18 @@ main .cart-summary .checkout-total ul li a{
 main .cart-summary .checkout-total ul li a:hover{
     background-color: var(--darkStaleGray);
     color: var(--khaki);
+}
+
+@media (max-width: 960px){
+   main .cart-page{
+        flex-direction: column;
+       align-items: center;
+    }
+    main .cart-page .cart-items{
+        width: 90%;
+    }
+    .cart-page .cart-summary{
+        width: 100%;
+        margin-top: 10px;
+    }
 }

@@ -48,7 +48,6 @@ main form.checkout-form .form-inline .form-group{
 /* Content Section === Checkout Page === Order Summary */
 main .order-summary{
     width: 30%;
-    height: 500px;
     padding: 5px;
     border: 1px solid rgba(236, 240, 241,0.3);
 }
@@ -125,4 +124,16 @@ main .order-summary .checkout-total ul li input[type="submit"]{
 main .order-summary .checkout-total ul li input[type="submit"]:hover{
     background-color: var(--darkStaleGray);
     color: var(--khaki);
+}
+
+@media screen and (max-width: 960px){
+    main .checkout-page{
+        flex-direction: column;
+    }
+    main .checkout-page .billing-detail{
+        width: 100%;
+    }
+    main .order-summary{
+        width: 100%;
+    }
 }

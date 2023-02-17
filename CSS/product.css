@@ -80,10 +80,10 @@ main .single-product .product-detail .product-cart #wishlist-form input[type="ch
     position: absolute;
     top: 6px;
     left: 0;
-    background: url(../img/icons/heart.png);
+    background: url(img/icons/heart.png);
 }
 main .single-product .product-detail .product-cart #wishlist-form input:checked[type="checkbox"]:before{
-    background: url(../img/icons/heart_fill.png);
+    background: url(img/icons/heart_fill.png);
 }
 main .single-product .product-detail .product-meta p{
     margin-bottom: 20px;
@@ -97,4 +97,27 @@ main .product-long-description p{
     font-size: 14px;
     line-height: 20px;
     color: var(--darkStaleGray);
+}
+
+@media screen and (max-width: 768px){
+    main .single-product{
+        flex-direction: column;
+    }
+    main .single-product .images-section{
+        width: 100%;
+    }
+    main .single-product .product-detail{
+        width: 100%;
+        padding-left: 0;
+    }
+    main .single-product .images-section .larg-img img{
+        height: 300px;
+    }
+    main .single-product .images-section .small-img{
+        padding: 10px 0;
+    }
+    main .single-product .images-section .small-img img{
+        width: 60px;
+        height: 40px;
+    }
 }
