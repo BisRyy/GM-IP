@@ -12,36 +12,6 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="cart.css"/>
     <link rel="stylesheet" type="text/css" href="footer.css"/>
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $('.prev').on("click", function () {
-
-                var prev = $(this).closest('.qty').find("input").val();
-
-                if (prev == 1) {
-                    $(this).closest('.qty').find("input").val('1');
-                } else {
-                    var prevVal = prev - 1;
-                    $(this).closest('.qty').find("input").val(prevVal);
-                }
-            });
-            $('.next').on("click", function () {
-
-                var next = $(this).closest('.qty').find("input").val();
-
-                if (next == 10) {
-                    $(this).closest('.qty').find("input").val('10');
-                } else {
-                    var nextVal = ++next;
-                    $(this).closest('.qty').find("input").val(nextVal);
-                }
-            });
-        });
-    </script>
 </head>
 <body>
 
@@ -128,10 +98,11 @@
         <div class="menu-bar">
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#features">SERVICES</a></li>
-                    <li><a href="login.html">SIGN IN</a></li>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="market.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="search-bar">
