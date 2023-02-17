@@ -96,3 +96,16 @@ main .account-page .account-detail table td{
     text-align: center;
     border: 1px solid #eee;
 }
+
+@media screen and (max-width: 768px){
+    main .account-page{
+        flex-direction: column;
+    }
+    main .account-page .profile{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main .account-page .account-detail{
+        width: 100%;
+    }
+}

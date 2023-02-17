@@ -134,7 +134,7 @@ main .collection{
 main .collection .men-collection{
     width: 49%;
     height: 200px;
-    background: gray url(../img/other/men-collection.jpg) no-repeat;
+    background: gray url(img/other/men-collection.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     text-align: right;
@@ -144,7 +144,7 @@ main .collection .men-collection{
 main .collection .women-collection{
     width: 49%;
     height: 200px;
-    background: gray url(../img/other/women-collection.jpg) no-repeat;
+    background: gray url(img/other/women-collection.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     text-align: left;
@@ -153,10 +153,40 @@ main .collection .women-collection{
 }
 main .collection .men-collection h2,
 main .collection .women-collection h2{
-    width: 200px;
+    width: 49%;
     font-size: 24px;
     color: var(--white);
     display: inline-block;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 1200px){
+    main .product-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 992px){
+    main .product-content{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main .product-content{
+        grid-template-columns: 1fr;
+    }
+
+    main .collection{
+       display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    main .collection .women-collection, main .collection .men-collection{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
