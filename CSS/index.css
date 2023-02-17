@@ -158,8 +158,10 @@ main #team .team-container {
     z-index: 1010;
 }
 
-#feature img {
+#feature .feature__data div img {
     float: left;
+    display: none;
+
 }
 
 .feature-title {
@@ -184,8 +186,6 @@ main #team .team-container {
 
 .feature__subtitle {
     display: inline-block;
-    font-size: var(--black);
-    margin-bottom: var(--black);
 }
 
 #features > div > div:nth-child(2) > div:nth-child(3) {
