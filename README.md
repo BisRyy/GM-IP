@@ -1,9 +1,13 @@
 ## Internet Programming
 
 # Grain-Mill Market and Delivery 
+>
+>> A Website for Online Market of grain Products.
+>> Made with HTML, CSS and Javascript
+>
 
-[Project Github](https://github.com/BisRyy/GM/edit/master/IP) <br>
-[Project Demo](http://bisry.me/GM/IP/src/landing.html) <br>
+[Project Github](https://github.com/BisRyy/GM-IP) <br>
+[Project Demo (http://bisry.me/GM-IP)](http://bisry.me/GM-IP) <br>
 
 
 ## Group Members
@@ -15,5 +19,6 @@ Bisrat Kebere  ETS0306/13 <br>
 Biyaol Mesay  ETS0309/13  <br> 
 Dagim Tezerawork ETS0333/13 <br> <br>
 
-## Section A
+# Internet Programming
+## Section A, Software Engineering, 2023 AASTU
 # GM-IP
